@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Anagram{
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter first phrase:");
+    String phrase = scan.nextLine();
+    System.out.println("Enter second phrase:");
+    String secphrase = scan.nextLine();
+    
+  }
+}

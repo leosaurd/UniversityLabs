@@ -1,0 +1,52 @@
+/**
+ * Box.java
+ * 
+ * Lab 7, Comp 160 2019
+ * 
+ * 
+ */
+
+public class Box{
+  private int height, width, length;
+  
+  public Box(){
+    height = 0;
+    width = 0;
+    length = 0;
+  }
+  
+  public Box(int same){
+    height = same;
+    width = same;
+    length = same;
+  }
+  
+  public Box(int h, int w, int l){
+    height = h;
+    width = w;
+    length = l;
+  }
+  
+  public void setHeight(int h){
+    height = h;
+  }
+  
+  public void setWidth(int w){
+    width = w;
+  }
+  
+  public void setLength(int l){
+    length = l;
+  }
+  
+  public int getSurfaceArea(){
+    return((height*length)*2 + (height*width)*2 + (length*width)*2);
+  }
+  
+  public int getVolume(){
+    return(length*width*height);
+  }
+  
+  public String toString(){
+    return("Height: " + height + "\nLength: " + length + "\nWidth: " + width + "\nSurface Area: " + this.getSurfaceArea() + "\nVolume: " + this.getVolume());
+  }

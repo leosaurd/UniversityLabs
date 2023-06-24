@@ -1,0 +1,12 @@
+
+
+
+
+
+public class Prep {
+  public static void main(String[] args) {
+    char ch = "A";
+    if (ch = ch.toUpperCase()){
+      System.out.println(ch);
+  }
+}

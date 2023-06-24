@@ -1,0 +1,25 @@
+public class Customer {
+  String name;
+  boolean child, student, booked;
+  
+  public Customer(String nameIn, int age, boolean studentIn){
+    name = nameIn;
+    student = studentIn;
+    
+  }
+  
+  public String getName(){
+  }
+  
+  public boolean isChild(){
+  }
+  
+  public boolean isStudent(){
+  }
+  
+  public boolean isBooked(){
+  }
+  
+  public void setBooked(){
+  }
+}

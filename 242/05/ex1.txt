@@ -1,0 +1,11 @@
+a)to continuously allocate memory for the wordlist as words get added.
+
+b)wordlist is a char array.
+
+c)a separator is needed to distinguish the words.
+
+d)it would be possible, but not correct. Assuming i would be 0, and j would be 100 for instance. 
+
+e)To read in up to 79 characters when scanning.
+
+f)do\0 cats\0 eat\0 bats\0 

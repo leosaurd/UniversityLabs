@@ -1,0 +1,6 @@
+public class TriangleApp{
+  public static void main(String[] args){
+    Triangle a = new Triangle();
+    System.out.println(a.getPerimeter);
+  }
+}

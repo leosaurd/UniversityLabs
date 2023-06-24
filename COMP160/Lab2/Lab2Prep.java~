@@ -1,0 +1,42 @@
+//Lab2(Variables)
+/* two types of comments:
+ * One is Single Line
+ * The other comments multiple lines
+ */
+
+public class Lab2 {
+  public static void main(String[] args) {
+    //int level2 = 2; //valid
+    //int Factorial = 0; //valid but not recommended, name is used
+    //int anExtremelyLongIdentifier = 0; //not recommended, not precise
+    //int 2ndLevel = 0; //not a statement, ";" expected(use _2ndLevel)
+    //int MAX_SIZE = 0; //valid but not recommended, name is used
+    //int highest$ = 1; //valid, but using symbol can be problematic
+    //int hook&ladder = 0; //";" expected
+    int i = 7;
+    int x = 3;
+    x = i;
+    i = x;
+    String first = "Easter Break";
+    String second = "University of Otago";
+    String day = "19";
+    String month = "04";
+    int year = 2019;
+    System.out.print(day + "/" + month + "/" + year);
+    System.out.println(first + "\n" + second );
+    System.out.println(year + 10);
+    System.out.print(month + 1);
+    /*
+     * 19/04/2019Easter Break
+     * University of Otago
+     * 2029
+     * 041
+     */
+    
+    //System.out.println(x); // output is 7
+    //System.out.println(i); //output is 7
+    //System.out.println("50 plus 25 is " + 50 + 25); //output is "50 plus 25 is 5025"
+  }
+}
+
+//the name of the method is main

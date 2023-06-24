@@ -1,0 +1,70 @@
+/** FilePanel.java
+  * Lab 20, COMP160,  2019
+  *
+  * a JPanel which creates 2 instances of Rectangle objects,
+  * stores them in an array, and draws them
+  */
+import java.io.*;
+import java.util.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class FilePanel extends JPanel{
+  private Rectangle[] drawObjects = new Rectangle [10];
+  private int count = 0;
+  
+  
+  /**constructor instantiates 6 Rectangle objects*/
+  public FilePanel(){ 
+//    drawObjects[count] = new Rectangle(true,Color.red, 0, 0,30,30);
+//    count++;
+//    drawObjects[count] = new Rectangle(false,Color.blue, 50, 50,30,30);
+//    count++;
+    String fileName = "Lab20data.txt";//File Name
+    boolean tf;
+    Color col;
+    try{
+      Scanner fileScan = new Scanner(new File(fileName));
+      
+      while (fileScan.hasNextLine()){
+        int fill = fileScan.nextInt();
+        int c = fileScan.nextInt();
+        int x = fileScan.nextInt();
+        int y = fileScan.nextInt();
+        int a = fileScan.nextInt();
+        int b = fileScan.nextInt();
+        if (fill == 0)
+          tf = false;
+        else
+          tf = true;
+        
+        if (c == 1)
+          col = Color.red;
+        else if (c == 2)
+          col = Color.blue;
+        else if (c == 3)
+          col = Color.green;
+        else 
+          col = Color.black;
+        
+        drawObjects[count] = new Rectangle(tf, col, x, y, a, b);
+        count++;
+      }
+      
+    }
+    catch (FileNotFoundException e){ 
+      System.out.println("File not found. Check file name and location."); 
+      System.exit(1);//exit from program if no file to read
+    }
+    setPreferredSize(new Dimension(300,300));
+    setBackground(Color.yellow);
+  }
+  
+  /**each Rectangle will draw itself*/
+  public void paintComponent(Graphics g){
+    super.paintComponent(g);
+    for(int i = 0; i < count; i++){
+      drawObjects[i].draw(g);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+public class IntCounter{
+  private int[] numArray;
+  
+  public IntCounter(int[] numArray){
+  }
+  
+  public void showTarget(int target){
+  }
+}

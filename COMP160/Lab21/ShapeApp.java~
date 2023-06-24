@@ -1,0 +1,12 @@
+import javax.swing.*;
+
+
+public class ShapeApp{//Application class to create JFrame
+  
+    public static void main(String[] args){
+    JFrame frm = new JFrame();
+    frm.isVisible(true);
+    frm.pack();
+    frm.setDefaultCloseOperation(EXIT_ON_CLOSE);
+  }
+}

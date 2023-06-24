@@ -1,0 +1,53 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+
+public class TrafficLightPanel extends JPanel{
+  private JButton redButton = new JButton("Red");
+  private JButton greenButton = new JButton("Green");
+  private JButton amberButton = new JButton("Amber");
+  private JLabel lastPressedLabel = new JLabel("Last pressed");
+  private JPanel buttonPanel = new JPanel();
+  
+  public TrafficLightPanel(){
+    ButtonListener l = new ButtonListener();
+    setSize(200, 300);
+    setBackground(Color.blue);
+    buttonPanel.setPreferredSize(new Dimension(80,290));
+    buttonPanel.setBackground(Color.white);
+    buttonPanel.add(redButton);
+    buttonPanel.add(greenButton);
+    buttonPanel.add(amberButton);
+    buttonPanel.add(lastPressedLabel);
+    add(buttonPanel);
+  }
+  
+  private class ButtonListener implements ActionListener{
+    public void actionPerformed(ActionEvent e){
+      if(e.getSource() == redButton){
+        lastPressedLabel.setText("Red");
+        buttonPanel.setBackground(Color.red);
+      }
+      if(e.getSource() == amberButton){
+        lastPressedLabel.setText("Amber");
+        buttonPanel.setBackground(Color.orange);
+      }
+      if(e.getSource() == greenButton){
+        lastPressedLabel.setText("Green");
+        buttonPanel.setBackground(Color.green);
+      }
+    }
+  }
+  
+  private class LightPanel extends JPanel{
+    public LightPanel(){
+    }
+    
+    public void paintComponent(Graphics g){
+    }
+  }
+    
+    
+}

@@ -1,0 +1,22 @@
+/**
+ * Lab 3, COMP160, 2019
+ */
+
+public class Letter{
+    private static String yours = "Yours sincerely";
+    private static String sign = "Mr Albert Agnew Esq.\nHuman Resources Manager\nButtery Baps Unlimited\nwww.bb.co.nz";
+   
+    public static void main(String [] args){
+        int junior = 25000;     // standard pay rate for Junior employee
+        int intermediate = 35000;  // standard pay rate for Intermediate employee
+        int senior = 50000;    // standard pay rate for Senior employee
+       
+    } // end method
+   
+    /** displays a job offer for Bottle Washer at $25K */
+    public static void jobOffer(){
+        System.out.println("Dear applicant\nI wish to offer you the position of Bottle Washer.\nThe pay rate will be $25000 per annum.");
+        System.out.println(yours + "\n" + sign + "\n");
+    } // end method
+   
+} // end class

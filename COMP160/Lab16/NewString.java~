@@ -1,0 +1,6 @@
+
+public class NewString{
+  
+  public static void main(String[] args){
+    String[3] fruits;
+  }

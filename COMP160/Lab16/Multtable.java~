@@ -1,0 +1,11 @@
+public class Multtable{
+  
+  public static void main(String[] args){
+    int[][] table = new int[12][12];
+    for (int a = 1; a < 13; a++){
+      for(int b = 1; b < 13; b++){
+        table[a][b] = a*b;
+      }
+    }
+  }
+}

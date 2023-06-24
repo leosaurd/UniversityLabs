@@ -1,0 +1,22 @@
+public class ShapePanel extends JPanel{//Class declaration
+  
+  //class variables
+  private JPanel controlPanel = new JPanel();
+  private JButton addShape = new JButton("Add Shape");
+  private JTextField showNum = new JTextField();
+  private JLabel countLabel = new JLabel("Count");
+  private DrawingPanel drawPanel = new DrawingPanel();
+  
+  //constructor
+  public ShapePanel(){
+    //subclass initialized upon construction
+    public class DrawingPanel extends JPanel{
+      //subclass constructor
+      public DrawingPanel(){
+      }
+      //drawing the objects
+      public void paintComponent(Graphics g){
+      }
+    }
+  }
+}

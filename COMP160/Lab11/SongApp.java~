@@ -1,0 +1,4 @@
+public class SongApp {
+  Song text = new Song("While my guitar gently weeps");
+  text();
+}

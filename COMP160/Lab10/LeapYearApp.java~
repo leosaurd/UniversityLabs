@@ -1,0 +1,13 @@
+public class LeapYearApp {
+  public static void main(String[] args) {
+  }
+  
+  public void leapYear(int year){
+    if(year<1582)
+      System.out.println(year + ": predates the Gregorian calendar");
+    else if(year%4 == 0 || (year % 100 == 0 && year % 400 != 0))
+      System.out.println(year + ": is a leap year");
+    else
+    System.out.println(year + ": is not a leap year");
+  }
+}

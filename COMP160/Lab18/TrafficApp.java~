@@ -1,0 +1,15 @@
+import javax.swing.*;
+
+
+
+
+public class TrafficApp{
+  public static void main(String[] args){
+    TrafficLightPanel tlp = new TrafficLightPanel();
+    JFrame frame = new JFrame();
+    frame.add(tlp);
+    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    frame.pack();
+    frame.setVisible(true);
+  }
+}

@@ -1,0 +1,17 @@
+//Lab2(Variables)
+/*two types of comments
+ * One is Single Line
+ * The other comments multiple lines
+ */
+
+public class Testing {
+  public static void main(String[] args) {
+    int level2 = 0;
+    int Factorial = 0;
+    int anExtremelyLongIdentifier = 0;
+    int 2ndLevel = 0;
+    int MAX_SIZE = 0;
+    int highest$ = 0;
+    int hook&ladder = 0;
+  }
+}

@@ -1,0 +1,17 @@
+import java.util.*;
+
+
+public class Shape{
+  
+  private int x, y, width, height;
+  private Color colour;
+  
+  public Shape(){
+  }
+  
+  public int randomRange(int lo, int hi){
+  }
+  
+  public void display(Graphics g){
+  }
+}

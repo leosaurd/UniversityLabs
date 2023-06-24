@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class str {
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter a sentence");
+    String sent = scan.nextLine();
+    int count = 0, vowels = 0, conso = 0;
+    while (count < sent.length()){
+      switch(sent.charAt(count).toUpperCase()){
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+          vowels++;
+          break;
+        default:
+          conso++;
+      }
+      count++;
+    }
+  }
+}

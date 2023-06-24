@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Testing{
+  public static void main(String[] args){
+    String a = "Hello World, I am a thing";
+    
+    Scanner sc = new Scanner(a);
+    System.out.print(sc);
+  }

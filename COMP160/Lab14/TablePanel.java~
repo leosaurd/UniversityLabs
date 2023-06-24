@@ -1,0 +1,16 @@
+public class TablePanel extends JPanel{
+  
+  private Diner diner1 = new Diner();
+  private Diner diner2 = new Diner();
+  private Diner diner3 = new Diner();
+  private Diner diner4 = new Diner();
+  private Diner diner5 = new Diner();
+  private Diner diner6 = new Diner();
+  
+  
+  public TablePanel(){
+  }
+  
+  public void paintComponent(Graphics g){
+  }
+}

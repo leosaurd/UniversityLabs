@@ -1,0 +1,25 @@
+public class Test{
+  public static void main(String[] args){
+    Bird[] birdies = new Bird[5];
+    birdies[0] = new LittleBlue();
+    birdies[0].travel();
+  }
+}
+
+public class Bird{
+  public void travel(){
+    System.out.println("0");
+  }
+}
+
+public class Penguin extends Bird{
+  public void travel(){
+    System.out.println("1");
+  }
+}
+
+public class LittleBlue extends Penguin{
+  public void travel(){
+    System.out.println("2");
+  }
+}
